@@ -28,13 +28,13 @@ Desenvolver um veículo terrestre em pequena escala para participação na Compe
 
 Solução escolhida pela equipe.
 
-- arquitetura de tração: diferencial com dois motores;
-- direção: Variação da velocidade das rodas;
-- controlador principal: ESP32 devkitv1;
-- driver de motores: Ponte H (Módulo L298n);
-- câmera embarcada: ESP32 S3 CAM;
-- estratégia de alimentação: 4 baterias AA recarregáveis;
-- recursos de automação, se houver: imagem transmitida do ESP cam pro celular.
+- **Arquitetura de tração:** diferencial com dois motores;
+- **Direção:** Variação da velocidade das rodas;
+- **Controlador principal:** ESP32 devkitv1;
+- **Driver de motores:** Ponte H (Módulo L298n);
+- **Câmera embarcada:** ESP32 S3 CAM;
+- **Estratégia de alimentação:** 4 baterias AA recarregáveis (Em análise);
+- **Recursos de automação:** imagem transmitida do ESP cam pro celular via WiFi.
 
 ---
 
@@ -92,13 +92,13 @@ Celular embarcado --> transmissão de vídeo
 
 ### Em desenvolvimento
 
--Desenvolvimento do novo chassi.
+- Desenvolvimento do novo chassi.
 
 
 ### Pendências principais
 
-Baterias adequadas pro projeto.
-Implementação do sistema em um único ESP (Planos futuros).
+- Baterias adequadas pro projeto.  
+- Implementação do sistema em um único ESP (Planos futuros).
 
 ---
 

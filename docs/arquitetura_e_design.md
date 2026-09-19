@@ -1,1 +1,5 @@
-
+# Design do carrinho #
+### - Primeiras Ideias ###
+|  Arte Conceitual 1 |  Imagem de Referência |
+| :---: | :---: |
+| ![Arte Conceitual](./imagens/arte_conceitual_1.png) | ![Referência Real](./imagens/referencia_real.jpg) |

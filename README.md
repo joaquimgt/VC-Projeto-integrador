@@ -71,10 +71,10 @@ Celular embarcado --> transmissão de vídeo
 ---
 
 ## 4. Estado atual do desenvolvimento
-*-0.0-Criação do repositório no github* 
-*-0.1-Criação da planilha de planejamento*
-*-0.2-Inicio do desenvolvimento dos sistemas*
-*-0.3-Desenvolvimento do novo chassi e organização do hardware* 
+*- 0.0-Criação do repositório no github*;  
+*- 0.1-Criação da planilha de planejamento*;    
+*- 0.2-Inicio do desenvolvimento dos sistemas*;    
+*- 0.3-Desenvolvimento do novo chassi e organização do hardware*.;   
 
 
 ### Concluído

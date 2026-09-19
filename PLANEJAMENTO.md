@@ -1,9 +1,9 @@
 ## Datas Importantes ##
 
 ### 16/09/2026 ###
-  **[ ] Entrega inicial do planejamento / repositório**
+  **[✓] Entrega inicial do planejamento / repositório**
   
-    obs:  
+    obs: - 
     
 
 ### 16/10/2026 ###

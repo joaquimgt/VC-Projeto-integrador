@@ -26,17 +26,14 @@ Desenvolver um veículo terrestre em pequena escala para participação na Compe
 
 ## 2. Conceito da solução
 
-Descrever, de forma objetiva, a solução escolhida pela equipe.
-
-Exemplo:
+Solução escolhida pela equipe.
 
 - arquitetura de tração: diferencial com dois motores;
-- direção: ;
+- direção: Variação da velocidade das rodas;
 - controlador principal: ESP32 devkitv1;
 - driver de motores: Ponte H (Módulo L298n);
-- câmera embarcada: ESP32 S3 CAM
+- câmera embarcada: ESP32 S3 CAM;
 - estratégia de alimentação: 4 baterias AA recarregáveis;
-- sensores adicionais, se houver: -;
 - recursos de automação, se houver: imagem transmitida do ESP cam pro celular.
 
 ---

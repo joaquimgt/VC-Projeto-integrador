@@ -31,13 +31,13 @@ Descrever, de forma objetiva, a solução escolhida pela equipe.
 Exemplo:
 
 - arquitetura de tração: diferencial com dois motores;
-- direção: ____________________;
-- controlador principal: ____________________;
-- driver de motores: ____________________;
-- câmera embarcada: ____________________;
-- estratégia de alimentação: ____________________;
-- sensores adicionais, se houver: ____________________;
-- recursos de automação, se houver: ____________________.
+- direção: ;
+- controlador principal: ESP32 devkitv1;
+- driver de motores: Ponte H (Módulo L298n);
+- câmera embarcada: ESP32 S3 CAM
+- estratégia de alimentação: 4 baterias AA recarregáveis;
+- sensores adicionais, se houver: -;
+- recursos de automação, se houver: imagem transmitida do ESP cam pro celular.
 
 ---
 
@@ -74,14 +74,17 @@ Celular embarcado --> transmissão de vídeo
 ---
 
 ## 4. Estado atual do desenvolvimento
-*-0.0-Criação do repositório no github*  
-Atualizar esta seção ao longo do projeto.
+*-0.0-Criação do repositório no github* 
+*-0.1-Criação da planilha de planejamento*
+*-0.2-Inicio do desenvolvimento dos sistemas*
+*-0.3-Desenvolvimento do novo chassi e organização do hardware* 
+
 
 ### Concluído
 
-- [ ] Definição da arquitetura geral
+- [✓] Definição da arquitetura geral
 - [ ] Projeto mecânico inicial
-- [ ] Diagrama elétrico inicial
+- [✓] Diagrama elétrico inicial
 - [ ] Comunicação com o sistema da organização
 - [ ] Controle dos motores em bancada
 - [ ] Integração mecânica
@@ -92,11 +95,13 @@ Atualizar esta seção ao longo do projeto.
 
 ### Em desenvolvimento
 
-Descrever as atividades em andamento.
+-Desenvolvimento do novo chassi.
+
 
 ### Pendências principais
 
-Descrever os principais pontos ainda não resolvidos.
+Baterias adequadas pro projeto.
+Implementação do sistema em um único ESP (Planos futuros).
 
 ---
 
@@ -114,7 +119,7 @@ O registro semanal de atividades está disponível em:
 
 ## 6. Documentação técnica
 
-Organizar a documentação técnica, preferencialmente, nas seguintes pastas:
+Documentação técnica nas seguintes pastas:
 
 ```text
 docs/

@@ -9,6 +9,6 @@
 
 ### Alimentação: ###
 
-- Inicialmente o uso de 4 pilhas AA, porém em análise.
+- Inicialmente o uso de 4 pilhas AA, porém, em análise.
   
 

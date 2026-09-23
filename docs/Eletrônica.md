@@ -7,10 +7,16 @@
 - Esp32 cam destinado à transmissão do vídeo;
 - Esp32 destinado ao controle dos motores;
 
+### Observação: ###
+Idealmente seria interessante utilizar somente o esp cam para as duas funções, mas algumas pesquisas indicaram que talvez haja 
+interferência e perda de pacotes durante a transmissão do vídeo e do controle remoto.
+
 ### Alimentação: ###
 
 - Inicialmente o uso de 4 pilhas AA, porém, em análise.
 
+
+## Componentes: ##
 | Componente | Tipo/Especificações |
 |---|---|
 | Esp32 Cam | Esp32 S3 cam |

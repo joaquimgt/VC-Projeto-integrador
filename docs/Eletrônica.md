@@ -10,5 +10,21 @@
 ### Alimentação: ###
 
 - Inicialmente o uso de 4 pilhas AA, porém, em análise.
+
+| Componente | Tipo/Especificações |
+|---|---|
+| Esp32 Cam | Esp32 S3 cam |
+| Esp32 | Esp32 devkitv1 |
+| Ponte H | Módulo L298n |
+|  Servo motor | MicroServo SG90 |
+| 2x Motores cc | Motor cc com caixa de redução |
+| R1 |  |
+| R2 |  |
+| C1 |  |
+| Q1 |  |
+| Motor Turbo | Motor cc |
+
+
+
   
 

@@ -3,13 +3,13 @@ Estrutura mecânica inicial:
 
 <img width="1200" height="896" alt="image" src="https://github.com/user-attachments/assets/51c70b72-56cd-4c54-b855-56e5d7b300b0" />
 
-Objetivo:
+*Objetivo:*
 Desenvolver a estrutura mecânica do carrinho;
 Integrar o sistema de tração e a roda boba;
 Fixar a ESP32-CAM e o servo motor ao chassi;
 Garantir estabilidade e organização dos componentes.
 
-Estrutura:
+*Estrutura:*
 
 O chassi será composto por uma estrutura de plastico (feito na 3D), responsável pela sustentação dos componentes e pela distribuição da massa do carrinho.
 
@@ -21,7 +21,7 @@ Na região frontal, será instalado um suporte para a ESP32-CAM. O suporte será
 
 Na parte traseira será instalado um aerofólio, utilizado como elemento complementar à estrutura e à estética do protótipo.
 
-Componentes mecânicos:
+*Componentes mecânicos:*
 Componente	Tipo/Especificações
 Chassi	Estrutura de placas para suporte dos componentes
 2x Rodas motrizes	Rodas acopladas aos motores CC
@@ -32,7 +32,7 @@ Servo motor	MicroServo SG90
 Aerofólio	Elemento estrutural e estético traseiro
 Elementos de fixação	Parafusos, porcas e espaçadores
 
-Distribuição dos componentes:
+*Distribuição dos componentes:*
 
 A distribuição dos componentes foi definida de maneira a aproveitar o espaço disponível no chassi e manter uma disposição organizada.
 

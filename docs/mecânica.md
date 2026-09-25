@@ -1,4 +1,5 @@
-#Desenvolvimento do sistema mecânico do projeto#
+##Desenvolvimento do sistema mecânico do projeto##
+
 *Estrutura mecânica inicial:*
 
 <img width="1200" height="896" alt="image" src="https://github.com/user-attachments/assets/51c70b72-56cd-4c54-b855-56e5d7b300b0" />

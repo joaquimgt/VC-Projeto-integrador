@@ -1,14 +1,14 @@
-##Desenvolvimento do sistema mecânico do projeto##
+## Desenvolvimento do sistema mecânico do projeto ##
 
 *Estrutura mecânica inicial:*
 
 <img width="1200" height="896" alt="image" src="https://github.com/user-attachments/assets/51c70b72-56cd-4c54-b855-56e5d7b300b0" />
 
 *Objetivo:*
-Desenvolver a estrutura mecânica do carrinho;
-Integrar o sistema de tração e a roda boba;
-Fixar a ESP32-CAM e o servo motor ao chassi;
-Garantir estabilidade e organização dos componentes.
+- Desenvolver a estrutura mecânica do carrinho;
+- Integrar o sistema de tração e a roda boba;
+- Fixar a ESP32-CAM e o servo motor ao chassi;
+- Garantir estabilidade e organização dos componentes.
 
 *Estrutura:*
 
@@ -38,11 +38,11 @@ Elementos de fixação	Parafusos, porcas e espaçadores
 A distribuição dos componentes foi definida de maneira a aproveitar o espaço disponível no chassi e manter uma disposição organizada.
 
 Parte frontal: ESP32-CAM e servo motor;
-Laterais: duas rodas motrizes e seus respectivos motores;
-Parte central: ESP32 e componentes de controle;
-Parte superior/traseira: ponte H e alimentação;
-Parte inferior/frontal: roda boba;
-Parte traseira: aerofólio.
-Observação:
+- Laterais: duas rodas motrizes e seus respectivos motores;
+- Parte central: ESP32 e componentes de controle;
+- Parte superior/traseira: ponte H e alimentação;
+- Parte inferior/frontal: roda boba;
+- Parte traseira: aerofólio.
+*Observação:*
 
 O conceito apresentado inicialmente possuía uma turbina/motor adicional na parte traseira. Após a análise do projeto, a utilização da turbina foi descartada, permanecendo no sistema apenas os componentes necessários para a locomoção, controle e transmissão de vídeo.

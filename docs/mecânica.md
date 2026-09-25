@@ -46,3 +46,5 @@ Parte frontal: ESP32-CAM e servo motor;
 *Observação:*
 
 O conceito apresentado inicialmente possuía uma turbina/motor adicional na parte traseira. Após a análise do projeto, a utilização da turbina foi descartada, permanecendo no sistema apenas os componentes necessários para a locomoção, controle e transmissão de vídeo.
+<img width="784" height="498" alt="image" src="https://github.com/user-attachments/assets/22fa0375-950d-4d91-a0eb-bf3ccd06f7f5" />
+

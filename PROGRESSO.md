@@ -102,11 +102,12 @@ Não houve.
 
 ## Concluído
 
-- ____________________
+- Conectamos o ESP ao app BLE CONTROLLER para dar os primeiros comandos a partir da programação.
 
 ## Não concluído
 
-- ____________________
+- Montagem do novo chassi
+- Instaçação dos componentes necessários.
 
 ## Problemas ou impedimentos
 

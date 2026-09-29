@@ -111,6 +111,7 @@ Não houve.
 ## Problemas ou impedimentos
 
 - Não montamos o novo chassi pois ainda estamos testando o funcionamento do carrinho com o chassi fornecido.
+- Nossa peça de acrilico que liga o motor com as rodas quebrou.
 
 ## Decisões técnicas da semana
 

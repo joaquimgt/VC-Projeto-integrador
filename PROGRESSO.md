@@ -77,7 +77,7 @@ Não houve.
 ## Testes realizados
 
 | Teste | Resultado |
-
+|---|---|
 | Funcionamento das rodas do carrinho | Motores funcionando corretamente|
 
 | Montagem do chassi oferecido pelo professor| Optamos por mudar o design e material|

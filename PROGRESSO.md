@@ -71,15 +71,15 @@ Não houve.
 - Pouco tempo de reunião com o técnico
 
 ## Decisões técnicas da semana
--Mudança de material da confecção do novo chassi:PETG(ou acrílico, faremos testes). No lugar do inicialmente planejado, PLA.
--Decidimos utilizar o sistema 4WD
-_
+- Mudança de material da confecção do novo chassi:PETG(ou acrílico, faremos testes). No lugar do inicialmente planejado, PLA.
+- Decidimos utilizar o sistema 4WD.
 
 ## Testes realizados
 
 | Teste | Resultado |
 
 | Funcionamento das rodas do carrinho | Motores funcionando corretamente|
+
 | Montagem do chassi oferecido pelo professor| Optamos por mudar o desing e material|
 
 ## Próximas ações

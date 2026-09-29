@@ -57,34 +57,39 @@ Não houve.
 - Definir a montagem dos componentes no novo chassi.
 
 ## Concluído
-
-- ____________________
-- ____________________
+- Reunião com os membros e o técnico da equipe.
+- Criação do projeto de um novo chassi.
+- Projeto do carrinho no Fusion 360
+- Definir a montagem dos componentes no novo chassi.
+-Teste de funcionamento das rodas do carrinho
 
 ## Não concluído
-
-- ____________________
+Não houve.
 
 ## Problemas ou impedimentos
 
-- ____________________
+- Pouco tempo de reunião com o técnico
 
 ## Decisões técnicas da semana
-
-- ____________________
+-Mudança de material da confecção do novo chassi:PETG(ou acrílico, faremos testes). No lugar do inicialmente planejado, PLA.
+-Decidimos utilizar o sistema 4WD
+_
 
 ## Testes realizados
 
 | Teste | Resultado |
-|---|---|
-| ____________________ | ____________________ |
+
+| Funcionamento das rodas do carrinho | Motores funcionando corretamente|
+| Montagem do chassi oferecido pelo professor| Optamos por mudar o desing e material|
 
 ## Próximas ações
 
-- ____________________
-- ____________________
+- Montar o novo chassi.
+- Desenvolver a parte mecânica do veículo.
+- Desenvolver a parte eletroeletrônica.
+- Instalar os componentes necessários.
+- Realizar os testes iniciais do sistema.
 
----
 
 # Semana 3 — 30/09/2026 a 06/10/2026
 
@@ -105,7 +110,7 @@ Não houve.
 
 ## Problemas ou impedimentos
 
-- ____________________
+- Não montamos o novo chassi pois ainda estamos testando o funcionamento do carrinho com o chassi fornecido.
 
 ## Decisões técnicas da semana
 

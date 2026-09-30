@@ -1,1 +1,80 @@
+ #include "BluetoothSerial.h"
+BluetoothSerial SerialBT;
 
+
+const int IN1 = 23;
+const int IN2 = 22;
+const int IN3 = 19;
+const int IN4 = 18;
+int ENA = 21;
+int ENB = 4;
+int contfrente = 0;
+int conttras = 0;
+
+void frente(){
+      digitalWrite(IN1, LOW);
+      digitalWrite(IN2, HIGH);
+      digitalWrite(IN3, LOW);
+      digitalWrite(IN4, HIGH);
+      analogWrite(ENA, 250);
+      analogWrite(ENB, 250);
+}
+void tras(){
+      digitalWrite(IN1, HIGH);
+      digitalWrite(IN2, LOW);
+      digitalWrite(IN3, HIGH);
+      digitalWrite(IN4, LOW);
+      analogWrite(ENA, 250);
+      analogWrite(ENB, 250);
+      Serial.println("funciona");
+}
+void stop(){
+      digitalWrite(IN1, LOW);
+      digitalWrite(IN2, LOW);
+      digitalWrite(IN3, LOW);
+      digitalWrite(IN4, LOW);
+      analogWrite(ENA, 0);
+      analogWrite(ENB, 0);
+      Serial.println("~~Carro parado~~");
+}
+
+void setup() {
+  Serial.begin(115200);
+  Serial.println("ESP OK!");
+  SerialBT.begin("ESP32_Carrinho");
+  pinMode(IN1, OUTPUT);
+  pinMode(IN2, OUTPUT);
+  pinMode(IN3, OUTPUT);
+  pinMode(IN4, OUTPUT);
+}
+
+void loop() {
+  if (SerialBT.available()) {
+    char comando = SerialBT.read();
+    // Verifica se o comando nao é um espaço ou quebra linha
+    if (comando != '\r' && comando != '\n') {
+      Serial.println(comando);
+    }
+
+
+    switch(comando){
+      case 'U':
+      frente();
+      contfrente++;
+      if(contfrente % 2 == 0){stop();}
+      break;
+
+      case 'D':
+      tras();
+      conttras++;
+      if(conttras % 2 == 0){stop();}
+      break;
+
+      default:break;
+    }
+  }
+
+
+  delay(10); 
+}
+  

@@ -93,6 +93,7 @@ Celular embarcado --> transmissão de vídeo
 ### Em desenvolvimento
 
 - Desenvolvimento do novo chassi.
+- Sistemas do carro
 
 
 ### Pendências principais

@@ -80,13 +80,13 @@ Celular embarcado --> transmissão de vídeo
 ### Concluído
 
 - [✓] Definição da arquitetura geral
-- [ ] Projeto mecânico inicial
+- [✓] Projeto mecânico inicial
 - [✓] Diagrama elétrico inicial
 - [ ] Comunicação com o sistema da organização
 - [ ] Controle dos motores em bancada
 - [ ] Integração mecânica
 - [ ] Integração eletroeletrônica
-- [ ] Teste do veículo em movimento
+- [✓] Teste do veículo em movimento
 - [ ] Integração da câmera
 - [ ] Outros: ____________________
 

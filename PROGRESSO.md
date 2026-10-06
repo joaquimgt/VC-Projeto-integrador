@@ -73,6 +73,7 @@ Não houve.
 ## Decisões técnicas da semana
 - Mudança de material da confecção do novo chassi:PETG(ou acrílico, faremos testes). No lugar do inicialmente planejado, PLA.
 - Decidimos utilizar o sistema 4WD.
+- Não utilizaremos mais a turbina como planejado inicialmente.
 
 ## Testes realizados
 

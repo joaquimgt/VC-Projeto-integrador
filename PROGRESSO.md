@@ -103,11 +103,15 @@ Não houve.
 ## Concluído
 
 - Conectamos o ESP ao app BLE CONTROLLER para dar os primeiros comandos a partir da programação.
+- Desenvolvimento da parte eletroeletrônica
+- Instalação dos componentes necessários
+- Testes iniciais do sistema
+- Desenvolvimento da parte mecânica do veículo.
 
 ## Não concluído
 
 - Montagem do novo chassi
-- Instaçação dos componentes necessários.
+  
 
 ## Problemas ou impedimentos
 
@@ -116,17 +120,24 @@ Não houve.
 
 ## Decisões técnicas da semana
 
-- ___________________
+- 
 
 ## Testes realizados
 
 | Teste | Resultado |
 |---|---|
-| ____________________ | ____________________ |
+| Controle do carrinho | carrinho desenvolveu bem  |
+|---|---|
+| roda ball carter no carrinho| melhor empenho que a roda boba louca, mas está lento |
+
 
 ## Próximas ações
 
-- ____________________
+- Aprimorar o código de controle do veículo
+- Desenvolver o subsistema de movimentação.
+- Testar o funcionamento do subsistema.
+- Verificar o acionamento e funcionamento dos motores.
+- Organizar o veículo e documentos para a avaliação da Etapa 01.
 
 ---
 
@@ -142,7 +153,7 @@ Não houve.
 
 ## Concluído
 
-- ____________________
+- 
 
 ## Não concluído
 

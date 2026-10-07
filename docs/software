@@ -1,4 +1,4 @@
- #include "BluetoothSerial.h"
+  #include "BluetoothSerial.h"
 BluetoothSerial SerialBT;
 
 
@@ -8,30 +8,16 @@ const int IN3 = 19;
 const int IN4 = 18;
 int ENA = 21;
 int ENB = 4;
-int contfrente = 0;
-int conttras = 0;
+char sentidoFB; 
+char sentidoRL;   
+int velocidadeFB = 0;
+int velocidadeRL  = 0;
 
-void frente(){
-      digitalWrite(IN1, LOW);
-      digitalWrite(IN2, HIGH);
-      digitalWrite(IN3, LOW);
-      digitalWrite(IN4, HIGH);
-      analogWrite(ENA, 250);
-      analogWrite(ENB, 250);
-}
-void tras(){
-      digitalWrite(IN1, HIGH);
-      digitalWrite(IN2, LOW);
-      digitalWrite(IN3, HIGH);
-      digitalWrite(IN4, LOW);
-      analogWrite(ENA, 250);
-      analogWrite(ENB, 250);
-      Serial.println("funciona");
-}
+
 void stop(){
       digitalWrite(IN1, LOW);
       digitalWrite(IN2, LOW);
-      digitalWrite(IN3, LOW);
+      digitalWrite(IN3, LOW); 
       digitalWrite(IN4, LOW);
       analogWrite(ENA, 0);
       analogWrite(ENB, 0);
@@ -50,30 +36,58 @@ void setup() {
 
 void loop() {
   if (SerialBT.available()) {
-    char comando = SerialBT.read();
-    // Verifica se o comando nao é um espaço ou quebra linha
-    if (comando != '\r' && comando != '\n') {
-      Serial.println(comando);
-    }
+    String comando = SerialBT.readStringUntil('\n');
+    comando.trim();
 
+    if (comando.length() > 0) {
+      int lidos = sscanf(comando.c_str(), "%c%d%c%d", &sentidoFB, &velocidadeFB, &sentidoRL, &velocidadeRL);
 
-    switch(comando){
-      case 'U':
-      frente();
-      contfrente++;
-      if(contfrente % 2 == 0){stop();}
-      break;
+      if (lidos == 4) {
+        switch (sentidoFB) {
+          case 'F':
+            digitalWrite(IN1, LOW);
+            digitalWrite(IN2, HIGH);
+            digitalWrite(IN3, LOW);
+            digitalWrite(IN4, HIGH);
+            break;
 
-      case 'D':
-      tras();
-      conttras++;
-      if(conttras % 2 == 0){stop();}
-      break;
+          case 'B':
+            digitalWrite(IN2, LOW);
+            digitalWrite(IN1, HIGH);
+            digitalWrite(IN4, LOW);
+            digitalWrite(IN3, HIGH);
+            break;
 
-      default:break;
+          default: // Se for 'S' ou outro caractere, para
+            stop();
+            break;
+        }
+
+        int velEsquerda = velocidadeFB;
+        int velDireita  = velocidadeFB;
+
+        switch (sentidoRL) {
+          case 'L': 
+            velDireita = velocidadeFB - velocidadeRL;
+            if (velDireita < 0) velDireita = 0; 
+            break;
+
+          case 'R': 
+            velEsquerda = velocidadeFB - velocidadeRL;
+            if (velEsquerda < 0) velEsquerda = 0;
+            break;
+
+          default:
+            break;
+        }
+
+        if (sentidoFB == 'F' || sentidoFB == 'B') {
+          analogWrite(ENA, velEsquerda);
+          analogWrite(ENB, velDireita);
+        }
+      }
     }
   }
-
 
   delay(10); 
 }

@@ -1,6 +1,5 @@
-  #include "BluetoothSerial.h"
+#include "BluetoothSerial.h"
 BluetoothSerial SerialBT;
-
 
 const int IN1 = 23;
 const int IN2 = 22;
@@ -8,30 +7,46 @@ const int IN3 = 19;
 const int IN4 = 18;
 int ENA = 21;
 int ENB = 4;
+
 char sentidoFB; 
 char sentidoRL;   
 int velocidadeFB = 0;
-int velocidadeRL  = 0;
+int velocidadeRL = 0;
 
+// Limiar mínimo onde seu motor realmente começa a girar com força
+const int PWM_MINIMO = 100; 
 
-void stop(){
-      digitalWrite(IN1, LOW);
-      digitalWrite(IN2, LOW);
-      digitalWrite(IN3, LOW); 
-      digitalWrite(IN4, LOW);
-      analogWrite(ENA, 0);
-      analogWrite(ENB, 0);
-      Serial.println("~~Carro parado~~");
+// Função que escala o PWM de 0..255 para PWM_MINIMO..255
+int ajustarPwmMinimo(int valorBruto) {
+  if (valorBruto <= 0) return 0;
+  
+  // Mapeia o valor recebido de (1 até 255) para a faixa (PWM_MINIMO até 255)
+  return map(valorBruto, 1, 255, PWM_MINIMO, 255);
+}
+
+void stop() {
+  digitalWrite(IN1, LOW);
+  digitalWrite(IN2, LOW);
+  digitalWrite(IN3, LOW); 
+  digitalWrite(IN4, LOW);
+  analogWrite(ENA, 0);
+  analogWrite(ENB, 0);
+  Serial.println("~~Carro parado~~");
 }
 
 void setup() {
   Serial.begin(115200);
   Serial.println("ESP OK!");
   SerialBT.begin("ESP32_Carrinho");
+
   pinMode(IN1, OUTPUT);
   pinMode(IN2, OUTPUT);
   pinMode(IN3, OUTPUT);
   pinMode(IN4, OUTPUT);
+  pinMode(ENA, OUTPUT);
+  pinMode(ENB, OUTPUT);
+
+  stop();
 }
 
 void loop() {
@@ -43,6 +58,11 @@ void loop() {
       int lidos = sscanf(comando.c_str(), "%c%d%c%d", &sentidoFB, &velocidadeFB, &sentidoRL, &velocidadeRL);
 
       if (lidos == 4) {
+        
+        // 1. Aplica a escala para vencer o atrito inicial
+        int velLinearAjustada = ajustarPwmMinimo(velocidadeFB);
+
+        // 2. Define o sentido dos motores (F / B)
         switch (sentidoFB) {
           case 'F':
             digitalWrite(IN1, LOW);
@@ -58,29 +78,39 @@ void loop() {
             digitalWrite(IN3, HIGH);
             break;
 
-          default: // Se for 'S' ou outro caractere, para
+          default:
             stop();
             break;
         }
 
-        int velEsquerda = velocidadeFB;
-        int velDireita  = velocidadeFB;
+        // 3. Calcula a velocidade para cada roda
+        int velEsquerda = velLinearAjustada;
+        int velDireita  = velLinearAjustada;
 
+        // 4. Aplica o diferencial de curva
         switch (sentidoRL) {
-          case 'L': 
-            velDireita = velocidadeFB - velocidadeRL;
-            if (velDireita < 0) velDireita = 0; 
+          case 'L':
+            velDireita = velLinearAjustada - velocidadeRL;
             break;
 
-          case 'R': 
-            velEsquerda = velocidadeFB - velocidadeRL;
-            if (velEsquerda < 0) velEsquerda = 0;
+          case 'R':
+            velEsquerda = velLinearAjustada - velocidadeRL;
             break;
 
           default:
             break;
         }
 
+        // 5. Garante que os valores fiquem dentro de limites seguros (0 a 255)
+        velEsquerda = constrain(velEsquerda, 0, 255);
+        velDireita  = constrain(velDireita, 0, 255);
+
+        // Se após o diferencial o motor ainda estiver com valor baixo (mas maior que 0), 
+        // mantemos o patamar mínimo para a roda externa/interna não travar
+        if (velEsquerda > 0 && velEsquerda < PWM_MINIMO) velEsquerda = PWM_MINIMO;
+        if (velDireita > 0 && velDireita < PWM_MINIMO) velDireita = PWM_MINIMO;
+
+        // 6. Envia o sinal PWM ajustado para a Ponte H
         if (sentidoFB == 'F' || sentidoFB == 'B') {
           analogWrite(ENA, velEsquerda);
           analogWrite(ENB, velDireita);

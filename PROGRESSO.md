@@ -74,6 +74,7 @@ Não houve.
 - Mudança de material da confecção do novo chassi:PETG(ou acrílico, faremos testes). No lugar do inicialmente planejado, PLA.
 - Decidimos utilizar o sistema 4WD.
 - Não utilizaremos mais a turbina como planejado inicialmente.
+- Utilizar uma roda que fosse unidirecional sem restrição mecânica.
 
 ## Testes realizados
 
@@ -81,7 +82,7 @@ Não houve.
 |---|---|
 | Funcionamento das rodas do carrinho | Motores funcionando corretamente|
 |---|---|
-| Montagem do chassi oferecido pelo professor| Optamos por mudar o design e material|
+| Montagem do chassi oferecido pela comissão| Optamos por mudar o design e material|
 
 ## Próximas ações
 
@@ -108,6 +109,7 @@ Não houve.
 - Instalação dos componentes necessários
 - Testes iniciais do sistema
 - Desenvolvimento da parte mecânica do veículo.
+- Teste com uma nova roda (ball carter). 
 
 ## Não concluído
 
@@ -121,7 +123,7 @@ Não houve.
 
 ## Decisões técnicas da semana
 
-- 
+- Não implementar a princípio o nosso novo chassi pois queremos que o carrinho funcione como queremos primeiramente.
 
 ## Testes realizados
 
@@ -154,19 +156,26 @@ Não houve.
 
 ## Concluído
 
-- 
+- Aprimoramento do código de controle via Wifi.
+- Desenvolvimento do sistema de curvas e frente/trás
+- Verificação do acionamento e funcionamento dos motores.
+- Verificação do nível de carregamento ds bateria.
+- Organização do veículo e documentos para a avaliação da Etapa 01.
+- Reunião nova com o técnico.
 
 ## Não concluído
 
-- ____________________
+- Não houve.
 
 ## Problemas ou impedimentos
 
-- ____________________
+- Bateria descarregando afetou alguns testes de velocidade do carrinho.
 
 ## Decisões técnicas da semana
 
-- ____________________
+- Alteração no código para diminuir o delay dos comandos
+- Circuito para medir a carga da bateria automaticamente
+- Sistema com 4 rodas a partir das fornecidas pelo professor orientador
 
 ## Testes realizados
 
@@ -176,7 +185,13 @@ Não houve.
 
 ## Próximas ações
 
-- ____________________
+- Preparar a demonstração mínima para a Avaliação de Progresso 1.
+- Revisar a documentação do repositório.
+- Comparar o cronograma planejado com o desenvolvimento realizado.
+- Realizar a Avaliação da Etapa 01 em 16/10.
+- Apresentar o protótipo inicial.
+- Registrar possíveis problemas identificados durante a avaliação.
+- Utilizar os resultados da avaliação para orientar as próximas etapas.
 
 ---
 

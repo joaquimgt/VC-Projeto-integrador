@@ -74,12 +74,12 @@ Celular embarcado --> transmissão de vídeo
 *- 0.0-Criação do repositório no github*;  
 *- 0.1-Criação da planilha de planejamento*;    
 *- 0.2-Inicio do desenvolvimento dos sistemas*;    
-*- 0.3-Desenvolvimento do novo chassi e organização dos componentes no hardware*.;   
-*- 0.4-Projeto do carrinho no Fusion360*.;
-*- 0.5-Controle do carrinho com a fonte de bancada*.;
-*- 0.6-Desenvolvimento do código para comandos via Bluetooth*.;
-*- 0.7-Sistema de direção básica testado*.;
-*- 0.8-Organização do carrinho e documentos para avaliaçãoda Etapa 1*.;
+*- 0.3-Desenvolvimento do novo chassi e organização dos componentes no hardware*.;    
+*- 0.4-Projeto do carrinho no Fusion360*.;  
+*- 0.5-Controle do carrinho com a fonte de bancada*.;   
+*- 0.6-Desenvolvimento do código para comandos via Bluetooth*.;   
+*- 0.7-Sistema de direção básica testado*.;  
+*- 0.8-Organização do carrinho e documentos para avaliaçãoda Etapa 1*.;   
 
 
 ### Concluído

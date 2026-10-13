@@ -83,7 +83,7 @@ Celular embarcado --> transmissão de vídeo
 - [✓] Projeto mecânico inicial
 - [✓] Diagrama elétrico inicial
 - [ ] Comunicação com o sistema da organização
-- [ ] Controle dos motores em bancada
+- [✓] Controle dos motores em bancada
 - [ ] Integração mecânica
 - [ ] Integração eletroeletrônica
 - [✓] Teste do veículo em movimento

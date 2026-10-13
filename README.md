@@ -119,14 +119,12 @@ O registro semanal de atividades está disponível em:
 
 Documentação técnica nas seguintes pastas:
 
-```text
-docs/
-├── arquitetura/
-├── mecanica/
-├── eletronica/
-├── software/
-└── testes/
-```
+- Arquitetura geral: **docs -> arquitetura_e_design.md**
+- Projeto mecânico: **docs -> mecânica.md**
+- Diagrama elétrico: **docs -> Eletrônica.md**
+- Documentação do software: **docs -> Software.md**
+- Lista de materiais: **docs -> mecânica.md**
+- Registros de testes: **README.md**
 
 ### Documentos disponíveis
 

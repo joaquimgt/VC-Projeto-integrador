@@ -159,7 +159,7 @@ Não houve.
 - Aprimoramento do código de controle via Wifi.
 - Desenvolvimento do sistema de curvas e frente/trás
 - Verificação do acionamento e funcionamento dos motores.
-- Verificação do nível de carregamento ds bateria.
+- Verificação do nível de carregamento das baterias.
 - Organização do veículo e documentos para a avaliação da Etapa 01.
 - Reunião nova com o técnico.
 

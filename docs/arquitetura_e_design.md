@@ -12,3 +12,4 @@
 - Não pretendemos utilizar acrílico, e sim PLA.
 - A arte conceitual mostra um carro muito robusto, porém nosso objetivo é o veículo mais leve possível.
 - Não vamos mais usar a turbina.
+- Ainda não implementado a criação do novo chassi pois faremos testes básicos com o protótipo inicial. 

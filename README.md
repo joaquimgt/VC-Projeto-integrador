@@ -188,8 +188,9 @@ Registrar os testes relevantes do projeto. Para registros mais detalhados, utili
 |---|---|---|---|
 | 18/9/2026 | Funcionamento das rodas do carrinho | Funcionaram corretamente | Criar código de controle |
 | 18/9/2026 | Montagem do chassi oferecido pelo professor | Carro estável porém pesado | Organizar componentes no carro |
+| 25/9/2026 | Controle do carrinho | Código funcionou muito bem, carrinho com movimentação livre | Avançar no código visando eficiência |
 
-
+Controle do carrinho
 ---
 
 ## 10. Observações

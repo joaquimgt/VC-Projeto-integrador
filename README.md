@@ -79,7 +79,8 @@ Celular embarcado --> transmissão de vídeo
 *- 0.5-Controle do carrinho com a fonte de bancada*.;   
 *- 0.6-Desenvolvimento do código para comandos via Bluetooth*.;   
 *- 0.7-Sistema de direção básica testado*.;  
-*- 0.8-Organização do carrinho e documentos para avaliaçãoda Etapa 1*.;   
+*- 0.8-Teste de desenvolvimento com rodas frontais*.;   
+*- 0.9-Organização do carrinho e documentos para avaliaçãoda Etapa 1*.;   
 
 
 ### Concluído
@@ -103,8 +104,8 @@ Celular embarcado --> transmissão de vídeo
 
 ### Pendências principais
 
-- Baterias adequadas pro projeto.  
 - Implementação do sistema em um único ESP (Planos futuros).
+- Novo chassi
 
 ---
 

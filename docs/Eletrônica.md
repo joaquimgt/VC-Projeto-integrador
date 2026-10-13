@@ -30,6 +30,9 @@ interferência e perda de pacotes durante a transmissão do vídeo e do controle
 | Q1 |  |
 | Motor Turbo | Motor cc |
 
+# Reajuste técnico do sistema: #
+A ideia do motor turbo não pareceu funcionar bem em testes, logo o carrinho foi montado utilizando um Esp32, ponte H e as baterias com um interruptor para ligar e desligar.
+
 
 
   

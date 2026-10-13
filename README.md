@@ -186,8 +186,8 @@ Registrar os testes relevantes do projeto. Para registros mais detalhados, utili
 
 | Data | Teste | Resultado | Próxima ação |
 |---|---|---|---|
-| 18/9/2026 | Funcionamento das rodas do carrinho | Funcionaram corretamente | criar código de controle |
-| 18/9/2026 | Funcionamento das rodas do carrinho | Funcionaram corretamente | criar código de controle |
+| 18/9/2026 | Funcionamento das rodas do carrinho | Funcionaram corretamente | Criar código de controle |
+| 18/9/2026 | Montagem do chassi oferecido pelo professor | Carro estável porém pesado | Organizar componentes no carro |
 
 
 ---

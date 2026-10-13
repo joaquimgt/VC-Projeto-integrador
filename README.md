@@ -186,7 +186,9 @@ Registrar os testes relevantes do projeto. Para registros mais detalhados, utili
 
 | Data | Teste | Resultado | Próxima ação |
 |---|---|---|---|
-| __/__/2026 | ____________________ | ____________________ | ____________________ |
+| 18/9/2026 | Funcionamento das rodas do carrinho | Funcionaram corretamente | criar código de controle |
+| 18/9/2026 | Funcionamento das rodas do carrinho | Funcionaram corretamente | criar código de controle |
+
 
 ---
 

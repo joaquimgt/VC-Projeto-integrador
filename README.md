@@ -146,7 +146,8 @@ docs/
 | ESP32 | 1 | Kit da organização | Disponível |
 | Motor DC | 2 | Kit da organização | Disponível |
 | Driver de motor | 1 | Kit da organização | Disponível |
-| ____________________ | ___ | Equipe / organização | ____________________ |
+| Ponte H | 1 | Kit da organização | Disponível |
+| Chave interruptor| 1 | Equipe | Disponível |
 
 ---
 

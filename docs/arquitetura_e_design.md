@@ -13,3 +13,10 @@
 - A arte conceitual mostra um carro muito robusto, porém nosso objetivo é o veículo mais leve possível.
 - Não vamos mais usar a turbina.
 - Ainda não implementado a criação do novo chassi pois faremos testes básicos com o protótipo inicial. 
+
+### - ultimas atualizações:
+
+- Adoção do sistema de tração 4WD.
+- Escolha de rodas que permitam movimentação sem restrições mecânicas.
+- Modificação do design e dos materiais utilizados na estrutura.
+- Definição de uma configuração com quatro rodas fornecidas pelo professor

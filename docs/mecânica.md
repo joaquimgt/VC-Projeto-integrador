@@ -50,4 +50,15 @@ O conceito apresentado inicialmente possuía uma turbina/motor adicional na part
 
 <img width="801" height="500" alt="image" src="https://github.com/user-attachments/assets/9a550000-15b8-4012-80db-c8d91160d67e" />
 
+Decidimos fazer um troca da roda boba pela ball caster roda omnidirecional, pra ter uma maior estabilidade nas curvas, porém o material utilizado (PLA) não teve um bom deslizamento no chão fazendo o carro perder velocidade.
+
+*imagem unicamente ilustrativa da roda que usamos:*
+
+<img width="510" height="456" alt="image" src="https://github.com/user-attachments/assets/a64bd4c4-6887-4d00-b65f-495134cb3830" />
+
+Porem após a reunião com o professor soares dia 09/10 optamos por trocar o uso da roda omnidirecional por um sistema 4WD para garantir mais estabilidade no nosso percurso e pra garantir que o carro faça curvas sem perder tanta velocidade.
+
+
+
+
 

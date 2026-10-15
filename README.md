@@ -66,7 +66,7 @@ Celular embarcado --> transmissão de vídeo
 - **Eletrônica:** composta pelo ESP32, pelo driver de motores e pelas conexões elétricas necessárias para controlar os dois motores DC. Também inclui a organização da alimentação e a integração dos componentes eletrônicos.
 - **Software:** responsável pela programação do ESP32, pelo recebimento dos comandos, pelo controle da velocidade e do sentido de rotação dos motores e pela integração dos sistemas do carrinho.
 - **Comunicação:** prevê a comunicação com o sistema de controle da competição por UDP, conforme o protocolo definido pela organização. A câmera ESP32-S3-CAM também está prevista para transmitir imagens por Wi-Fi para um celular.
-- **Alimentação:** descrever resumidamente.
+- **Alimentação:** tensão de 8,4 V, com corrente máxima aproximada de 2 A.
 
 ---
 

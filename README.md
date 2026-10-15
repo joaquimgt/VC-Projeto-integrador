@@ -62,10 +62,10 @@ Celular embarcado --> transmissão de vídeo
 
 ### Subsistemas
 
-- **Mecânica:** descrever resumidamente.
-- **Eletrônica:** descrever resumidamente.
-- **Software:** descrever resumidamente.
-- **Comunicação:** descrever resumidamente.
+- **Mecânica:** responsável pela estrutura física do carrinho, incluindo o chassi, a fixação dos motores, as rodas e a organização dos componentes. O projeto mecânico está sendo atualizado para melhorar a distribuição dos componentes e o desempenho do veículo.
+- **Eletrônica:** composta pelo ESP32, pelo driver de motores e pelas conexões elétricas necessárias para controlar os dois motores DC. Também inclui a organização da alimentação e a integração dos componentes eletrônicos.
+- **Software:** responsável pela programação do ESP32, pelo recebimento dos comandos, pelo controle da velocidade e do sentido de rotação dos motores e pela integração dos sistemas do carrinho.
+- **Comunicação:** prevê a comunicação com o sistema de controle da competição por UDP, conforme o protocolo definido pela organização. A câmera ESP32-S3-CAM também está prevista para transmitir imagens por Wi-Fi para um celular.
 - **Alimentação:** descrever resumidamente.
 
 ---
@@ -88,24 +88,24 @@ Celular embarcado --> transmissão de vídeo
 - [✓] Definição da arquitetura geral
 - [✓] Projeto mecânico inicial
 - [✓] Diagrama elétrico inicial
-- [ ] Comunicação com o sistema da organização
+- [✓] Comunicação com o sistema da organização
 - [✓] Controle dos motores em bancada
-- [ ] Integração mecânica
-- [ ] Integração eletroeletrônica
+- [✓] Integração mecânica
+- [✓] Integração eletroeletrônica
 - [✓] Teste do veículo em movimento
 - [ ] Integração da câmera
 - [ ] Outros: ____________________
 
 ### Em desenvolvimento
 
-- Desenvolvimento do novo chassi.
-- Sistemas do carro
+- Confecção de revestimentos para os pneus dos carrinhos.
+- Encoder mecânico para sincronização das rodas.
 
 
 ### Pendências principais
 
-- Implementação do sistema em um único ESP (Planos futuros).
-- Novo chassi
+- Encoder mecânico ou óptico.
+- Arranjo de Oring para pneus
 
 ---
 
